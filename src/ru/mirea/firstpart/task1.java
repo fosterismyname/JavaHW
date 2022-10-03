@@ -3,14 +3,14 @@ package ru.mirea.firstpart;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class task1 {
+public class Task1 {
 
-    public static void task1_3() {
+    public static void Task1_3() {
 
         Scanner in = new Scanner(System.in);
         System.out.print("Размер массива = ");
         int arrSize = in.nextInt();
-        int mainArr[] = new int[arrSize];
+        int[] mainArr = new int[arrSize];
         int amount = 0;
         System.out.print("Введите массив с клавиатуры: ");
 
@@ -23,9 +23,10 @@ public class task1 {
         System.out.print(amount);
         System.out.println("Среднее арифметическое = ");
         System.out.print((float)(amount / arrSize));
+        Task1_6();
     }
 
-    public static void task1_4() {
+    public static void Task1_4() {
         Scanner in = new Scanner(System.in);
         ArrayList<Integer> mainList = new ArrayList<>();
         int size = 0, amount = 0, index = 0;
@@ -51,14 +52,14 @@ public class task1 {
         System.out.println(maximum);
     }
 
-    public static void task1_5(String[] args) {
+    public static void Task1_5(String[] args) {
         int tmp = args.length;
         for (int i = 0; i < tmp; i++) {
             System.out.print(args[i]);
         }
     }
 
-    public static void task1_6() {
+    public static void Task1_6() {
         String resultStr = "";
         for (int i = 1; i < 11; i++) {
             resultStr = resultStr + String.format("%.4f", 1.0 / i);
@@ -74,7 +75,7 @@ public class task1 {
         return resultFact;
     }
 
-    public static void task1_7() {
+    public static void Task1_7() {
         Scanner in = new Scanner(System.in);
         int number = in.nextInt();
         System.out.print(number + "! = " + factorial(number));
