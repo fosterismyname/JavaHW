@@ -80,5 +80,14 @@ public class Task1 {
         int number = in.nextInt();
         System.out.print(number + "! = " + factorial(number));
     }
+    
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        Task1_3();
+        Task1_4();
+        Task1_5(in.nextLine().split(" "));
+        Task1_6();
+        Task1_7();
+    }
 }
  
