@@ -6,10 +6,10 @@ import java.util.ArrayList;
 public class SortTest {
     public static void main(String[] args){
         Student[] students = new Student[]{
-                new Student(13, 69),
-                new Student(7, 49),
-                new Student(132, 231),
-                new Student(87, 3)
+                new Student(3, 321),
+                new Student(165, 32),
+                new Student(322, 543),
+                new Student(9, 43)
         };
         for (Student s : students){
             System.out.println(s);
@@ -26,10 +26,10 @@ public class SortTest {
         }
         System.out.println("\n");
         Student[] students2 = new Student[]{
-                new Student(32, 124),
-                new Student(21, 543),
-                new Student(93, 223),
-                new Student(132, 52)
+                new Student(2, 432),
+                new Student(76, 386),
+                new Student(74, 254),
+                new Student(14, 65)
         };
         Student[] allStudents = new Student[students.length + students2.length];
         System.arraycopy(students, 0, allStudents,0,students.length);
